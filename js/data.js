@@ -1,8 +1,9 @@
 class Data {
-    constructor() {
-    }
+    //list;
 
-    list = JSON.parse(localStorage.getItem('localList'));
+    constructor() {
+        this.getList = localStorage.getItem('localList');
+    }
 
     get() {
     //조회 - 못 했음
@@ -16,21 +17,20 @@ class Data {
     put(key, item, index) {
     //수정
         return new Promise((resolve) => {
-            let changedItem = [...JSON.parse(localStorage.getItem('localList'))];
+            let changedItem = [...JSON.parse(this.getList)];
             if (key == 'title'){
                 changedItem[index].title = item;
             }else {
                 changedItem[index].status = item;
             }
             resolve(localStorage.setItem('localList', JSON.stringify(changedItem)));
-            console.log(localStorage.getItem('localList'));
         });
     }
 
     post(item) {
     //등록
         return new Promise((resolve) => {
-            let changedItem = [...JSON.parse(localStorage.getItem('localList')), item];
+            let changedItem = this.getList != null ? [...JSON.parse(this.getList), item] : [item];
             resolve(localStorage.setItem('localList', JSON.stringify(changedItem)));
         });
     }
@@ -38,7 +38,7 @@ class Data {
     delete(index) {
     //삭제
         return new Promise((resolve) => {
-            let changedItem = [...JSON.parse(localStorage.getItem('localList'))];
+            let changedItem = [...JSON.parse(this.getList)];
             changedItem.splice(index, 1);
             resolve(localStorage.setItem('localList', JSON.stringify(changedItem)));
         });
