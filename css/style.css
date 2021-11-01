@@ -21,43 +21,43 @@ h1 {
   margin-bottom: 5%;
 }
 
-.todoWrap {
+#todoWrap {
   width: 800px;
   padding: 5% 7.5%;
   margin: 0 auto;
   border: 1px solid #000;
 }
 
-.inputBox {
+#todoHeader {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.todoCont {
+#todoBody {
   margin-top: 10%;
 }
 
-.todoCont li:after{
-  display: block;
-  content: '';
-  clear: both;
+#todoList li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.todoCont li + li {
+#todoList li + li {
   margin-top: 2%;
 }
 
-.todoCont p {
-  display: inline-block;
-  width: 85%;
-  margin-left: 10px;
+#todoList input[type='text'] {
+  width: 75%;
 }
 
-.todoCont input:checked ~ p {
+#todoList input:disabled {
+  background-color: transparent;
+  border: none;
+}
+
+#todoList input:checked + input[type='text'] {
   text-decoration: line-through;
 }
 
-.todoCont .btnDelete {
-  float: right;
-}
