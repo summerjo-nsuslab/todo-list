@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b431c139-ab92-4b0a-9030-76ddc61770b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/input.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/input.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/item.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/item.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/list.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/function.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
