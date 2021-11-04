@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b431c139-ab92-4b0a-9030-76ddc61770b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/input.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/input.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/item.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/item.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/list.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,9 @@
     <setting file="http://localhost:63342/todo-list/js/input.component.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="201UVWCV2hUwcfmkLOSLa0WqKjQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,16 +52,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.list.component.js">
     <configuration name="index" type="JavascriptDebugType" uri="http://localhost:63342/todo-list/index.html" useFirstLineBreakpoints="true" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="list.component.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/list.component.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.list.component.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +85,10 @@
       <workItem from="1635296440550" duration="22595000" />
       <workItem from="1635384706763" duration="23672000" />
       <workItem from="1635470148049" duration="25995000" />
-      <workItem from="1635566759451" duration="11186000" />
+      <workItem from="1635566759451" duration="18517000" />
+      <workItem from="1635815617591" duration="13418000" />
+      <workItem from="1635904333243" duration="16355000" />
+      <workItem from="1635987935014" duration="5837000" />
     </task>
     <servers />
   </component>

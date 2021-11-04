@@ -1,8 +1,8 @@
-import { AppComponent } from './app.component.js';
-import { Data } from './data.js';
+import { SummerTodo } from './summer-todo.js';
 
 function bootstrap() {
-    new AppComponent();
+    const app = new SummerTodo();
+    app.start();
 }
 
 bootstrap();

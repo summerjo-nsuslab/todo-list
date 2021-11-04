@@ -1,41 +1,22 @@
 import { Data } from './data.js';
 
 class Component {
-    //base class 전역 변수 선언
+    stateManager;
+    listData;
     hostElement;
-    state = [];
-    template = '';
+    template;
+    setTemplate() {};
+    setEventHandler() {};
+    setChildren() {};
 
-    stateChangeCallback = [];
-    setTemplate() {}
-    setEventHandler() {}
-    setChildren() {} //하위 class를 호출하여 DOM을 생성하기 위함
-
-    addStateChanges(callback) {
-        this.stateChangeCallback.push(callback);
-        this.publishStateChanges();
-    }
-
-    publishStateChanges() {
-        this.stateChangeCallback.forEach(callback => {
-            //console.log(callback);
-            callback;
-        });
-    }
-
-    constructor(hostElementId) {
-        this.state = [];
+    constructor(hostElementId, manager, data) {
+        this.stateManager = manager;
+        this.listData = data;
         this.hostElement = document.getElementById(hostElementId);
-        this.setState();
         this.setTemplate();
         this.render();
         this.setEventHandler();
         this.setChildren();
-    }
-
-    setState(newState) {
-        this.state = [...this.state, newState];
-        console.log(this.state);
     }
 
     render() {

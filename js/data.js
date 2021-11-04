@@ -1,47 +1,54 @@
 class Data {
-    //list;
+    list;
 
     constructor() {
-        this.getList = localStorage.getItem('localList');
+        this.list = [];
     }
 
     get() {
-    //조회 - 못 했음
+    //조회
         return new Promise((resolve) => {
             setTimeout(() => {
-                resolve();
+                resolve(localStorage.getItem('localList'));
             }, 500);
-        });
+        }).then((result) => {
+            return this.list = (result != null) ? JSON.parse(result) : [];
+        })
     }
 
     put(key, item, index) {
     //수정
         return new Promise((resolve) => {
-            let changedItem = [...JSON.parse(this.getList)];
+            let changedItem = [...this.list];
             if (key == 'title'){
                 changedItem[index].title = item;
             }else {
                 changedItem[index].status = item;
             }
-            resolve(localStorage.setItem('localList', JSON.stringify(changedItem)));
+            resolve(this.run(changedItem));
         });
     }
 
     post(item) {
     //등록
         return new Promise((resolve) => {
-            let changedItem = this.getList != null ? [...JSON.parse(this.getList), item] : [item];
-            resolve(localStorage.setItem('localList', JSON.stringify(changedItem)));
-        });
+            let changedItem = (this.list != null) ? [...this.list, item] : [item];
+            resolve(this.run(changedItem));
+        })
     }
 
     delete(index) {
     //삭제
         return new Promise((resolve) => {
-            let changedItem = [...JSON.parse(this.getList)];
+            let changedItem = [...this.list];
             changedItem.splice(index, 1);
-            resolve(localStorage.setItem('localList', JSON.stringify(changedItem)));
+            resolve(this.run(changedItem));
         });
+    }
+
+    run(setLocalList) {
+        localStorage.setItem('localList', JSON.stringify(setLocalList));
+        return this.list = JSON.parse(localStorage.getItem('localList'));
     }
 }
 

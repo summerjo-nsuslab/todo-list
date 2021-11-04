@@ -3,8 +3,8 @@ import { InputComponent } from './input.component.js';
 import { ListComponent } from './list.component.js';
 
 class AppComponent extends Component {
-    constructor() {
-        super('todoWrap');
+    constructor(manager, data) {
+        super('todoWrap', manager, data);
     }
 
     setTemplate() {
@@ -12,8 +12,8 @@ class AppComponent extends Component {
     }
 
     setChildren() {
-        new InputComponent();
-        new ListComponent();
+        new InputComponent(this.stateManager, this.listData);
+        new ListComponent(this.stateManager, this.listData);
     }
 }
 
